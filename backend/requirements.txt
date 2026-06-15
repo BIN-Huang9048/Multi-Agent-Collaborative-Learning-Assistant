@@ -1,0 +1,22 @@
+# ============================================================
+# backend/requirements.txt
+# 基于职能型多Agent的本地知识库学习笔记生成助手
+# ============================================================
+# 安装方式（Windows GBK 环境需显式指定 UTF-8 编码）：
+#   pip install --encoding utf-8 -r requirements.txt
+# 推荐 Python 版本：>= 3.11
+# ============================================================
+
+fastapi>=0.110.0,<1.0.0
+uvicorn[standard]>=0.29.0,<1.0.0
+chromadb>=0.5.0,<1.0.0
+langchain>=0.2.0,<1.0.0
+langgraph>=0.1.0,<1.0.0
+langchain-openai>=0.1.0,<1.0.0
+langchain-community>=0.2.0,<1.0.0
+python-multipart>=0.0.9,<1.0.0
+python-dotenv>=1.0.0,<2.0.0
+PyPDF2>=3.0.0,<4.0.0
+markdown>=3.6.0,<4.0.0
+pydantic>=2.0.0,<3.0.0
+httpx2>=0.1.0

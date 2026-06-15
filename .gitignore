@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+.env
+.idea/
+.vscode/
+frontend/node_modules/
+backend/chroma_db/
+backend/knowledge/
+*.db
+*.sqlite

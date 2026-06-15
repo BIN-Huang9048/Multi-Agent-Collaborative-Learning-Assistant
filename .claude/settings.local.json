@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -X POST http://127.0.0.1:8000/api/download_note -H \"Content-Type: application/json\" -d \"{\\\\\"content\\\\\":\\\\\"# Test\\\\\\\\n\\\\\\\\nHello World\\\\\",\\\\\"style\\\\\":\\\\\"outline\\\\\",\\\\\"svg_markup\\\\\":\\\\\"\\\\\",\\\\\"title\\\\\":\\\\\"Test\\\\\"}\" -o /tmp/test_download.docx -w \"%{http_code}\")"
+    ]
+  }
+}
