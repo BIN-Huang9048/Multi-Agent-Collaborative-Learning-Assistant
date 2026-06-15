@@ -17096,3 +17096,362 @@ UnicodeEncodeError: 'latin-1' codec can't encode characters in position 31-32: o
 2026-06-15 20:53:35 | INFO     | app.agents:run:1672 | ============================================================
 2026-06-15 20:53:35 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=terminated | note_len=0 | elapsed=0.05s
 2026-06-15 20:53:35 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:11:14 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:11:14 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=5 | 向量总数=17
+2026-06-15 21:11:14 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:11:14 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 27.44ms
+2026-06-15 21:11:14 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 28.44ms
+2026-06-15 21:11:22 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷三.md =====
+2026-06-15 21:11:23 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷三.md | 删除向量数=5
+2026-06-15 21:11:23 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷三.md | 向量删除=5 | 物理删除=False
+2026-06-15 21:11:23 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷三.md | status=200 | 56.22ms
+2026-06-15 21:11:23 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:11:23 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=4 | 向量总数=12
+2026-06-15 21:11:23 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 11.20ms
+2026-06-15 21:11:24 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷一.md =====
+2026-06-15 21:11:24 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷一.md | 删除向量数=5
+2026-06-15 21:11:24 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷一.md | 向量删除=5 | 物理删除=False
+2026-06-15 21:11:24 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷一.md | status=200 | 53.33ms
+2026-06-15 21:11:24 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:11:24 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=3 | 向量总数=7
+2026-06-15 21:11:24 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 13.97ms
+2026-06-15 21:11:27 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷二.md =====
+2026-06-15 21:11:27 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷二.md | 删除向量数=5
+2026-06-15 21:11:27 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷二.md | 向量删除=5 | 物理删除=False
+2026-06-15 21:11:27 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷二.md | status=200 | 42.56ms
+2026-06-15 21:11:27 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:11:27 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=2 | 向量总数=2
+2026-06-15 21:11:27 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 4.99ms
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:449 | ===== [接口] POST /api/upload_file =====
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:450 | 收到上传请求 | 文件名=模拟卷一.md | content_type=text/markdown
+2026-06-15 21:11:57 | INFO     | app.file_handler:check_file:280 | 文件校验通过 | 文件名=模拟卷一.md | 大小=9.04KB | 格式=md
+2026-06-15 21:11:57 | INFO     | app.file_handler:save_file:338 | 文件保存成功 | 文件名=模拟卷一.md | 路径=E:\pxiangmu-huizong\backend\knowledge\模拟卷一.md | 大小=9260 字节
+2026-06-15 21:11:57 | INFO     | app.file_handler:extract_text:402 | 文本提取完成 | 文件=模拟卷一.md | 字符数=4395
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:490 | 文本提取完成 | 文件名=模拟卷一.md | 原始长度=4395
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:506 | 文本清洗完成 | 清洗后长度=4043
+2026-06-15 21:11:57 | INFO     | app.file_handler:split_text:521 | 文本分片完成 | 原始=4043字符 | 分片数=5 | 平均=936字符/片
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:522 | 文本分片完成 | 分片数=5
+2026-06-15 21:11:57 | INFO     | app.vector_store:add_documents:325 | 增量入库完成 | 源文件=模拟卷一.md | 入库分片=5 | 批次ID=bc7206035ed3
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:554 | 向量入库完成 | 文件名=模拟卷一.md | 入库分片=5
+2026-06-15 21:11:57 | INFO     | app.main:api_upload_file:573 | ===== [接口] POST /api/upload_file 完成 =====
+2026-06-15 21:11:57 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/upload_file | status=200 | 369.27ms
+2026-06-15 21:11:57 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:11:57 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=3 | 向量总数=7
+2026-06-15 21:11:57 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 7.75ms
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:449 | ===== [接口] POST /api/upload_file =====
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:450 | 收到上传请求 | 文件名=模拟卷二.md | content_type=text/markdown
+2026-06-15 21:12:02 | INFO     | app.file_handler:check_file:280 | 文件校验通过 | 文件名=模拟卷二.md | 大小=9.17KB | 格式=md
+2026-06-15 21:12:02 | INFO     | app.file_handler:save_file:338 | 文件保存成功 | 文件名=模拟卷二.md | 路径=E:\pxiangmu-huizong\backend\knowledge\模拟卷二.md | 大小=9390 字节
+2026-06-15 21:12:02 | INFO     | app.file_handler:extract_text:402 | 文本提取完成 | 文件=模拟卷二.md | 字符数=4333
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:490 | 文本提取完成 | 文件名=模拟卷二.md | 原始长度=4333
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:506 | 文本清洗完成 | 清洗后长度=3860
+2026-06-15 21:12:02 | INFO     | app.file_handler:split_text:521 | 文本分片完成 | 原始=3860字符 | 分片数=5 | 平均=921字符/片
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:522 | 文本分片完成 | 分片数=5
+2026-06-15 21:12:02 | INFO     | app.vector_store:add_documents:325 | 增量入库完成 | 源文件=模拟卷二.md | 入库分片=5 | 批次ID=dd98fa6ecb68
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:554 | 向量入库完成 | 文件名=模拟卷二.md | 入库分片=5
+2026-06-15 21:12:02 | INFO     | app.main:api_upload_file:573 | ===== [接口] POST /api/upload_file 完成 =====
+2026-06-15 21:12:02 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/upload_file | status=200 | 282.28ms
+2026-06-15 21:12:02 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:12:02 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=4 | 向量总数=12
+2026-06-15 21:12:02 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 12.10ms
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:449 | ===== [接口] POST /api/upload_file =====
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:450 | 收到上传请求 | 文件名=模拟卷三.md | content_type=text/markdown
+2026-06-15 21:12:06 | INFO     | app.file_handler:check_file:280 | 文件校验通过 | 文件名=模拟卷三.md | 大小=9.22KB | 格式=md
+2026-06-15 21:12:06 | INFO     | app.file_handler:save_file:338 | 文件保存成功 | 文件名=模拟卷三.md | 路径=E:\pxiangmu-huizong\backend\knowledge\模拟卷三.md | 大小=9441 字节
+2026-06-15 21:12:06 | INFO     | app.file_handler:extract_text:402 | 文本提取完成 | 文件=模拟卷三.md | 字符数=4480
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:490 | 文本提取完成 | 文件名=模拟卷三.md | 原始长度=4480
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:506 | 文本清洗完成 | 清洗后长度=4074
+2026-06-15 21:12:06 | INFO     | app.file_handler:split_text:521 | 文本分片完成 | 原始=4074字符 | 分片数=5 | 平均=960字符/片
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:522 | 文本分片完成 | 分片数=5
+2026-06-15 21:12:06 | INFO     | app.vector_store:add_documents:325 | 增量入库完成 | 源文件=模拟卷三.md | 入库分片=5 | 批次ID=0b64eac68b6f
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:554 | 向量入库完成 | 文件名=模拟卷三.md | 入库分片=5
+2026-06-15 21:12:06 | INFO     | app.main:api_upload_file:573 | ===== [接口] POST /api/upload_file 完成 =====
+2026-06-15 21:12:06 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/upload_file | status=200 | 295.16ms
+2026-06-15 21:12:06 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:12:06 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=5 | 向量总数=17
+2026-06-15 21:12:06 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 10.58ms
+2026-06-15 21:12:19 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:12:19 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=大数据处理技术知识点 | style=exam_points
+2026-06-15 21:12:19 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:12:19 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 5.11ms
+2026-06-15 21:12:19 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=大数据处理技术知识点 | style=exam_points
+2026-06-15 21:12:19 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:12:19 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:12:19 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:12:19 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:12:19 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=大数据处理技术知识点 | style=exam_points
+2026-06-15 21:12:19 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:12:19 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:12:19 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=大数据处理技术知识点 | style=exam_points
+2026-06-15 21:12:19 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:12:19 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=大数据处理技术知识点 | 命中=5条 | top_k=5
+2026-06-15 21:12:19 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=4条
+2026-06-15 21:12:24 | INFO     | app.agents:execute:517 | [RetrievalAgent] 执行完成 | 有效素材=4条 | 摘要长度=1139字符 | 原始长度=3802字符
+2026-06-15 21:12:24 | INFO     | app.agents:execute:524 | ==================================================
+2026-06-15 21:12:24 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=running
+2026-06-15 21:12:24 | INFO     | app.agents:_understanding_node:1562 | [Workflow] → 进入理解梳理节点
+2026-06-15 21:12:24 | INFO     | app.agents:execute:796 | ==================================================
+2026-06-15 21:12:24 | INFO     | app.agents:execute:797 | [UnderstandingAgent] 开始执行 | context_len=1139 | raw_context_len=3801 | trace_source_len=3801
+2026-06-15 21:12:24 | INFO     | app.agents:execute:823 | [UnderstandingAgent] 第 1/2 轮框架构建...
+2026-06-15 21:12:29 | INFO     | app.agents:execute:884 | [UnderstandingAgent] 框架校验通过 | 第1轮
+2026-06-15 21:12:29 | INFO     | app.agents:execute:887 | [UnderstandingAgent] 执行完成 | 框架长度=923字符
+2026-06-15 21:12:29 | INFO     | app.agents:execute:892 | ==================================================
+2026-06-15 21:12:29 | INFO     | app.agents:_understanding_node:1564 | [Workflow] ← 理解梳理节点完成 | status=running
+2026-06-15 21:12:29 | INFO     | app.agents:_generation_node:1574 | [Workflow] → 进入笔记生成节点
+2026-06-15 21:12:29 | INFO     | app.agents:execute:1163 | ==================================================
+2026-06-15 21:12:29 | INFO     | app.agents:execute:1164 | [NoteGenerateAgent] 开始执行 | 框架长度=923 | 风格=exam_points
+2026-06-15 21:12:29 | INFO     | app.agents:execute:1202 | [NoteGenerateAgent] 第 1/3 轮笔记生成...
+2026-06-15 21:12:29 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.5 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:12:37 | INFO     | app.agents:execute:1247 | [NoteGenerateAgent] 笔记校验通过 | 第1轮
+2026-06-15 21:12:37 | INFO     | app.agents:execute:1273 | [NoteGenerateAgent] 执行完成 | 笔记长度=1352字符 | 总尝试=1轮
+2026-06-15 21:12:37 | INFO     | app.agents:execute:1279 | ==================================================
+2026-06-15 21:12:37 | INFO     | app.agents:_generation_node:1576 | [Workflow] ← 笔记生成节点完成 | status=completed
+2026-06-15 21:12:37 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=completed | 耗时=18.43s
+2026-06-15 21:12:37 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:12:37 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=completed | note_len=1352 | elapsed=18.43s
+2026-06-15 21:12:37 | INFO     | app.notes_store:save_note:151 | 笔记已保存 | id=f1bc1eaec3f9 | query=大数据处理技术知识点
+2026-06-15 21:12:37 | INFO     | app.main:_sse_event_generator:746 | 笔记已自动保存到历史 | query=大数据处理技术知识点
+2026-06-15 21:12:37 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:12:37 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:12:37 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 7.96ms
+2026-06-15 21:12:37 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:12:37 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 3.02ms
+2026-06-15 21:12:52 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:12:52 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:12:52 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:12:52 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 9.10ms
+2026-06-15 21:12:52 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:12:52 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:12:52 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:12:52 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:12:52 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:12:52 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:12:52 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:12:52 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:12:52 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:12:52 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:12:52 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=大数据处理技术知识点 | 命中=5条 | top_k=5
+2026-06-15 21:12:52 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=4条
+2026-06-15 21:12:57 | INFO     | app.agents:execute:517 | [RetrievalAgent] 执行完成 | 有效素材=4条 | 摘要长度=1153字符 | 原始长度=3802字符
+2026-06-15 21:12:57 | INFO     | app.agents:execute:524 | ==================================================
+2026-06-15 21:12:57 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=running
+2026-06-15 21:12:57 | INFO     | app.agents:_understanding_node:1562 | [Workflow] → 进入理解梳理节点
+2026-06-15 21:12:57 | INFO     | app.agents:execute:796 | ==================================================
+2026-06-15 21:12:57 | INFO     | app.agents:execute:797 | [UnderstandingAgent] 开始执行 | context_len=1153 | raw_context_len=3801 | trace_source_len=3801
+2026-06-15 21:12:57 | INFO     | app.agents:execute:823 | [UnderstandingAgent] 第 1/2 轮框架构建...
+2026-06-15 21:13:03 | INFO     | app.agents:execute:884 | [UnderstandingAgent] 框架校验通过 | 第1轮
+2026-06-15 21:13:03 | INFO     | app.agents:execute:887 | [UnderstandingAgent] 执行完成 | 框架长度=1135字符
+2026-06-15 21:13:03 | INFO     | app.agents:execute:892 | ==================================================
+2026-06-15 21:13:03 | INFO     | app.agents:_understanding_node:1564 | [Workflow] ← 理解梳理节点完成 | status=running
+2026-06-15 21:13:03 | INFO     | app.agents:_generation_node:1574 | [Workflow] → 进入笔记生成节点
+2026-06-15 21:13:03 | INFO     | app.agents:execute:1163 | ==================================================
+2026-06-15 21:13:03 | INFO     | app.agents:execute:1164 | [NoteGenerateAgent] 开始执行 | 框架长度=1135 | 风格=mindmap
+2026-06-15 21:13:03 | INFO     | app.agents:execute:1202 | [NoteGenerateAgent] 第 1/3 轮笔记生成...
+2026-06-15 21:13:03 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.5 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:13:06 | INFO     | app.agents:execute:1247 | [NoteGenerateAgent] 笔记校验通过 | 第1轮
+2026-06-15 21:13:06 | INFO     | app.agents:execute:1273 | [NoteGenerateAgent] 执行完成 | 笔记长度=1131字符 | 总尝试=1轮
+2026-06-15 21:13:06 | INFO     | app.agents:execute:1279 | ==================================================
+2026-06-15 21:13:06 | INFO     | app.agents:_generation_node:1576 | [Workflow] ← 笔记生成节点完成 | status=completed
+2026-06-15 21:13:06 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=completed | 耗时=14.56s
+2026-06-15 21:13:06 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:13:06 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=completed | note_len=1131 | elapsed=14.56s
+2026-06-15 21:13:06 | INFO     | app.notes_store:save_note:151 | 笔记已保存 | id=932fc113c9f8 | query=大数据处理技术知识点
+2026-06-15 21:13:06 | INFO     | app.main:_sse_event_generator:746 | 笔记已自动保存到历史 | query=大数据处理技术知识点
+2026-06-15 21:13:06 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:13:06 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:13:06 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 6.97ms
+2026-06-15 21:13:07 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:13:07 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 0.85ms
+2026-06-15 21:13:10 | INFO     | app.main:api_delete_note:1098 | ===== [接口] DELETE /api/notes/932fc113c9f8 =====
+2026-06-15 21:13:10 | INFO     | app.notes_store:delete_note:254 | 笔记已删除 | id=932fc113c9f8
+2026-06-15 21:13:10 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/notes/932fc113c9f8 | status=200 | 7.17ms
+2026-06-15 21:13:10 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:13:10 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 8.11ms
+2026-06-15 21:13:17 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷一.md =====
+2026-06-15 21:13:17 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷一.md | 删除向量数=5
+2026-06-15 21:13:17 | INFO     | app.file_handler:delete_physical_file:629 | 物理文件已删除 | 文件=模拟卷一.md
+2026-06-15 21:13:17 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷一.md | 向量删除=5 | 物理删除=True
+2026-06-15 21:13:17 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷一.md | status=200 | 63.43ms
+2026-06-15 21:13:17 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:13:17 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=4 | 向量总数=12
+2026-06-15 21:13:17 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 7.85ms
+2026-06-15 21:13:19 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷三.md =====
+2026-06-15 21:13:19 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷三.md | 删除向量数=5
+2026-06-15 21:13:19 | INFO     | app.file_handler:delete_physical_file:629 | 物理文件已删除 | 文件=模拟卷三.md
+2026-06-15 21:13:19 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷三.md | 向量删除=5 | 物理删除=True
+2026-06-15 21:13:19 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷三.md | status=200 | 45.39ms
+2026-06-15 21:13:19 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:13:19 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=3 | 向量总数=7
+2026-06-15 21:13:19 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 15.06ms
+2026-06-15 21:13:20 | INFO     | app.main:api_delete_file:881 | ===== [接口] DELETE /api/files/模拟卷二.md =====
+2026-06-15 21:13:20 | INFO     | app.vector_store:delete_by_source:521 | 按来源删除完成 | 来源=模拟卷二.md | 删除向量数=5
+2026-06-15 21:13:20 | INFO     | app.file_handler:delete_physical_file:629 | 物理文件已删除 | 文件=模拟卷二.md
+2026-06-15 21:13:20 | INFO     | app.main:api_delete_file:909 | 文件删除完成 | 文件=模拟卷二.md | 向量删除=5 | 物理删除=True
+2026-06-15 21:13:20 | INFO     | app.main:request_logging_middleware:249 | <-- DELETE /api/files/模拟卷二.md | status=200 | 48.12ms
+2026-06-15 21:13:20 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:13:20 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=2 | 向量总数=2
+2026-06-15 21:13:20 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 4.60ms
+2026-06-15 21:13:46 | INFO     | app.main:api_upload_file:449 | ===== [接口] POST /api/upload_file =====
+2026-06-15 21:13:46 | INFO     | app.main:api_upload_file:450 | 收到上传请求 | 文件名=模拟卷一.md | content_type=text/markdown
+2026-06-15 21:13:46 | INFO     | app.file_handler:check_file:280 | 文件校验通过 | 文件名=模拟卷一.md | 大小=9.04KB | 格式=md
+2026-06-15 21:13:46 | INFO     | app.file_handler:save_file:338 | 文件保存成功 | 文件名=模拟卷一.md | 路径=E:\pxiangmu-huizong\backend\knowledge\模拟卷一.md | 大小=9260 字节
+2026-06-15 21:13:46 | INFO     | app.file_handler:extract_text:402 | 文本提取完成 | 文件=模拟卷一.md | 字符数=4395
+2026-06-15 21:13:46 | INFO     | app.main:api_upload_file:490 | 文本提取完成 | 文件名=模拟卷一.md | 原始长度=4395
+2026-06-15 21:13:46 | INFO     | app.main:api_upload_file:506 | 文本清洗完成 | 清洗后长度=4043
+2026-06-15 21:13:46 | INFO     | app.file_handler:split_text:521 | 文本分片完成 | 原始=4043字符 | 分片数=5 | 平均=936字符/片
+2026-06-15 21:13:46 | INFO     | app.main:api_upload_file:522 | 文本分片完成 | 分片数=5
+2026-06-15 21:13:47 | INFO     | app.vector_store:add_documents:325 | 增量入库完成 | 源文件=模拟卷一.md | 入库分片=5 | 批次ID=daa603049fbb
+2026-06-15 21:13:47 | INFO     | app.main:api_upload_file:554 | 向量入库完成 | 文件名=模拟卷一.md | 入库分片=5
+2026-06-15 21:13:47 | INFO     | app.main:api_upload_file:573 | ===== [接口] POST /api/upload_file 完成 =====
+2026-06-15 21:13:47 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/upload_file | status=200 | 308.35ms
+2026-06-15 21:13:47 | INFO     | app.main:api_list_files:804 | ===== [接口] GET /api/files =====
+2026-06-15 21:13:47 | INFO     | app.main:api_list_files:840 | 文件列表查询 | 文件数=3 | 向量总数=7
+2026-06-15 21:13:47 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/files | status=200 | 8.06ms
+2026-06-15 21:13:51 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:13:51 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=大数据处理技术知识点 | style=outline
+2026-06-15 21:13:51 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:13:51 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 1.51ms
+2026-06-15 21:13:51 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=大数据处理技术知识点 | style=outline
+2026-06-15 21:13:51 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:13:51 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:13:51 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:13:51 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:13:51 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=大数据处理技术知识点 | style=outline
+2026-06-15 21:13:51 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:13:51 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:13:51 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=大数据处理技术知识点 | style=outline
+2026-06-15 21:13:51 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:13:51 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=大数据处理技术知识点 | 命中=5条 | top_k=5
+2026-06-15 21:13:51 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=2条
+2026-06-15 21:13:54 | INFO     | app.agents:execute:517 | [RetrievalAgent] 执行完成 | 有效素材=2条 | 摘要长度=780字符 | 原始长度=1769字符
+2026-06-15 21:13:54 | INFO     | app.agents:execute:524 | ==================================================
+2026-06-15 21:13:54 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=running
+2026-06-15 21:13:54 | INFO     | app.agents:_understanding_node:1562 | [Workflow] → 进入理解梳理节点
+2026-06-15 21:13:54 | INFO     | app.agents:execute:796 | ==================================================
+2026-06-15 21:13:54 | INFO     | app.agents:execute:797 | [UnderstandingAgent] 开始执行 | context_len=780 | raw_context_len=1768 | trace_source_len=1768
+2026-06-15 21:13:54 | INFO     | app.agents:execute:823 | [UnderstandingAgent] 第 1/2 轮框架构建...
+2026-06-15 21:13:58 | INFO     | app.agents:execute:884 | [UnderstandingAgent] 框架校验通过 | 第1轮
+2026-06-15 21:13:58 | INFO     | app.agents:execute:887 | [UnderstandingAgent] 执行完成 | 框架长度=543字符
+2026-06-15 21:13:58 | INFO     | app.agents:execute:892 | ==================================================
+2026-06-15 21:13:58 | INFO     | app.agents:_understanding_node:1564 | [Workflow] ← 理解梳理节点完成 | status=running
+2026-06-15 21:13:58 | INFO     | app.agents:_generation_node:1574 | [Workflow] → 进入笔记生成节点
+2026-06-15 21:13:58 | INFO     | app.agents:execute:1163 | ==================================================
+2026-06-15 21:13:58 | INFO     | app.agents:execute:1164 | [NoteGenerateAgent] 开始执行 | 框架长度=543 | 风格=outline
+2026-06-15 21:13:58 | INFO     | app.agents:execute:1202 | [NoteGenerateAgent] 第 1/3 轮笔记生成...
+2026-06-15 21:13:58 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.5 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:14:04 | INFO     | app.agents:execute:1247 | [NoteGenerateAgent] 笔记校验通过 | 第1轮
+2026-06-15 21:14:04 | INFO     | app.agents:execute:1273 | [NoteGenerateAgent] 执行完成 | 笔记长度=1426字符 | 总尝试=1轮
+2026-06-15 21:14:04 | INFO     | app.agents:execute:1279 | ==================================================
+2026-06-15 21:14:04 | INFO     | app.agents:_generation_node:1576 | [Workflow] ← 笔记生成节点完成 | status=completed
+2026-06-15 21:14:04 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=completed | 耗时=13.43s
+2026-06-15 21:14:04 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:14:04 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=completed | note_len=1426 | elapsed=13.43s
+2026-06-15 21:14:04 | INFO     | app.notes_store:save_note:148 | 笔记已更新 | id=b771554893ef | query=大数据处理技术知识点
+2026-06-15 21:14:04 | INFO     | app.main:_sse_event_generator:746 | 笔记已自动保存到历史 | query=大数据处理技术知识点
+2026-06-15 21:14:04 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:14:04 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:14:04 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 9.39ms
+2026-06-15 21:14:04 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:14:04 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 1.01ms
+2026-06-15 21:14:13 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:14:13 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:14:13 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:14:13 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 5.60ms
+2026-06-15 21:14:13 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:14:13 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:14:13 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:14:13 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:14:13 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:14:13 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:14:13 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:14:13 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:14:13 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=大数据处理技术知识点 | style=mindmap
+2026-06-15 21:14:13 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:14:13 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=大数据处理技术知识点 | 命中=5条 | top_k=5
+2026-06-15 21:14:13 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=2条
+2026-06-15 21:14:18 | INFO     | app.agents:execute:517 | [RetrievalAgent] 执行完成 | 有效素材=2条 | 摘要长度=975字符 | 原始长度=1769字符
+2026-06-15 21:14:18 | INFO     | app.agents:execute:524 | ==================================================
+2026-06-15 21:14:18 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=running
+2026-06-15 21:14:18 | INFO     | app.agents:_understanding_node:1562 | [Workflow] → 进入理解梳理节点
+2026-06-15 21:14:18 | INFO     | app.agents:execute:796 | ==================================================
+2026-06-15 21:14:18 | INFO     | app.agents:execute:797 | [UnderstandingAgent] 开始执行 | context_len=975 | raw_context_len=1768 | trace_source_len=1768
+2026-06-15 21:14:18 | INFO     | app.agents:execute:823 | [UnderstandingAgent] 第 1/2 轮框架构建...
+2026-06-15 21:14:23 | INFO     | app.agents:execute:884 | [UnderstandingAgent] 框架校验通过 | 第1轮
+2026-06-15 21:14:23 | INFO     | app.agents:execute:887 | [UnderstandingAgent] 执行完成 | 框架长度=795字符
+2026-06-15 21:14:23 | INFO     | app.agents:execute:892 | ==================================================
+2026-06-15 21:14:23 | INFO     | app.agents:_understanding_node:1564 | [Workflow] ← 理解梳理节点完成 | status=running
+2026-06-15 21:14:23 | INFO     | app.agents:_generation_node:1574 | [Workflow] → 进入笔记生成节点
+2026-06-15 21:14:23 | INFO     | app.agents:execute:1163 | ==================================================
+2026-06-15 21:14:23 | INFO     | app.agents:execute:1164 | [NoteGenerateAgent] 开始执行 | 框架长度=795 | 风格=mindmap
+2026-06-15 21:14:23 | INFO     | app.agents:execute:1202 | [NoteGenerateAgent] 第 1/3 轮笔记生成...
+2026-06-15 21:14:23 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.5 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:14:26 | INFO     | app.agents:execute:1247 | [NoteGenerateAgent] 笔记校验通过 | 第1轮
+2026-06-15 21:14:26 | INFO     | app.agents:execute:1273 | [NoteGenerateAgent] 执行完成 | 笔记长度=854字符 | 总尝试=1轮
+2026-06-15 21:14:26 | INFO     | app.agents:execute:1279 | ==================================================
+2026-06-15 21:14:26 | INFO     | app.agents:_generation_node:1576 | [Workflow] ← 笔记生成节点完成 | status=completed
+2026-06-15 21:14:26 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=completed | 耗时=12.80s
+2026-06-15 21:14:26 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:14:26 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=completed | note_len=854 | elapsed=12.80s
+2026-06-15 21:14:26 | INFO     | app.notes_store:save_note:151 | 笔记已保存 | id=d8e716b77f29 | query=大数据处理技术知识点
+2026-06-15 21:14:26 | INFO     | app.main:_sse_event_generator:746 | 笔记已自动保存到历史 | query=大数据处理技术知识点
+2026-06-15 21:14:26 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:14:26 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:14:26 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 6.54ms
+2026-06-15 21:14:26 | INFO     | app.main:api_list_notes:1012 | ===== [接口] GET /api/notes | style=all =====
+2026-06-15 21:14:26 | INFO     | app.main:request_logging_middleware:249 | <-- GET /api/notes | status=200 | 1.18ms
+2026-06-15 21:14:33 | INFO     | app.main:api_download_note:1173 | ===== [接口] POST /api/download_note =====
+2026-06-15 21:14:33 | INFO     | app.main:api_download_note:1174 | 下载请求 | style=mindmap | content_len=854 | title=大数据处理技术知识点
+2026-06-15 21:14:33 | INFO     | app.main:api_download_note:1219 | 下载文件生成成功 | filename=大数据处理技术知识点-思维导图.pdf | size=6847 bytes
+2026-06-15 21:14:33 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/download_note | status=200 | 704.92ms
+2026-06-15 21:15:44 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:15:44 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=汽车相关部件汇总 | style=mindmap
+2026-06-15 21:15:44 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:15:44 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 3.62ms
+2026-06-15 21:15:44 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=汽车相关部件汇总 | style=mindmap
+2026-06-15 21:15:44 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:15:44 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:15:44 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:15:44 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:15:44 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=汽车相关部件汇总 | style=mindmap
+2026-06-15 21:15:44 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:15:44 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:15:44 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=汽车相关部件汇总 | style=mindmap
+2026-06-15 21:15:44 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:15:44 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=汽车相关部件汇总 | 命中=5条 | top_k=5
+2026-06-15 21:15:44 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=0条
+2026-06-15 21:15:44 | WARNING  | app.agents:execute:455 | [RetrievalAgent] 有效素材不足（0条 < 1条），触发二次检索...
+2026-06-15 21:15:44 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=汽车相关部件汇总 | 命中=7条 | top_k=10
+2026-06-15 21:15:44 | INFO     | app.agents:execute:472 | [RetrievalAgent] 二次检索完成 | 检索=7条 | 有效=0条
+2026-06-15 21:15:44 | WARNING  | app.agents:execute:487 | [RetrievalAgent] 无有效素材 → 终止流程
+2026-06-15 21:15:44 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=terminated
+2026-06-15 21:15:44 | WARNING  | app.agents:_route_after_retrieval:1596 | [Workflow] 检索终止 → 流程结束
+2026-06-15 21:15:44 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=terminated | 耗时=0.05s
+2026-06-15 21:15:44 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:15:44 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=terminated | note_len=0 | elapsed=0.05s
+2026-06-15 21:15:44 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====
+2026-06-15 21:15:56 | INFO     | app.main:api_generate_note:622 | ===== [接口] POST /api/generate_note (SSE) =====
+2026-06-15 21:15:56 | INFO     | app.main:api_generate_note:623 | 收到生成请求 | query=外科手术流程 | style=mindmap
+2026-06-15 21:15:56 | INFO     | app.main:_run_workflow_in_thread:682 | 正在调用 Agent 工作流（后台线程）...
+2026-06-15 21:15:56 | INFO     | app.main:request_logging_middleware:249 | <-- POST /api/generate_note | status=200 | 1.51ms
+2026-06-15 21:15:56 | INFO     | app.agents:run_workflow:1747 | [入口] run_workflow 被调用 | query=外科手术流程 | style=mindmap
+2026-06-15 21:15:56 | INFO     | app.agents:_create_llm:171 | LLM 实例已创建（DeepSeek）| 模型=deepseek-chat | 温度=0.7 | max_tokens=4096 | base=https://api.deepseek.com/v1
+2026-06-15 21:15:56 | INFO     | app.agents:_build_graph:1539 | LangGraph 工作流图构建完成
+2026-06-15 21:15:56 | INFO     | app.agents:__init__:1483 | AgentWorkflow 初始化完成 | 工作流已编译
+2026-06-15 21:15:56 | INFO     | app.agents:run:1635 | ============================================================
+2026-06-15 21:15:56 | INFO     | app.agents:run:1636 | [Workflow] 开始执行 | query=外科手术流程 | style=mindmap
+2026-06-15 21:15:56 | INFO     | app.agents:_retrieval_node:1550 | [Workflow] → 进入检索节点
+2026-06-15 21:15:56 | INFO     | app.agents:execute:419 | ==================================================
+2026-06-15 21:15:56 | INFO     | app.agents:execute:420 | [RetrievalAgent] 开始执行 | query=外科手术流程 | style=mindmap
+2026-06-15 21:15:56 | INFO     | app.agents:execute:438 | [RetrievalAgent] 正在执行首次向量检索...
+2026-06-15 21:15:56 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=外科手术流程 | 命中=5条 | top_k=5
+2026-06-15 21:15:56 | INFO     | app.agents:execute:446 | [RetrievalAgent] 相关性自检完成 | 检索=5条 | 有效=0条
+2026-06-15 21:15:56 | WARNING  | app.agents:execute:455 | [RetrievalAgent] 有效素材不足（0条 < 1条），触发二次检索...
+2026-06-15 21:15:56 | INFO     | app.vector_store:retrieve_similar:422 | 语义检索完成 | query=外科手术流程 | 命中=7条 | top_k=10
+2026-06-15 21:15:56 | INFO     | app.agents:execute:472 | [RetrievalAgent] 二次检索完成 | 检索=7条 | 有效=0条
+2026-06-15 21:15:56 | WARNING  | app.agents:execute:487 | [RetrievalAgent] 无有效素材 → 终止流程
+2026-06-15 21:15:56 | INFO     | app.agents:_retrieval_node:1552 | [Workflow] ← 检索节点完成 | status=terminated
+2026-06-15 21:15:56 | WARNING  | app.agents:_route_after_retrieval:1596 | [Workflow] 检索终止 → 流程结束
+2026-06-15 21:15:56 | INFO     | app.agents:run:1667 | [Workflow] 执行完成 | status=terminated | 耗时=0.05s
+2026-06-15 21:15:56 | INFO     | app.agents:run:1672 | ============================================================
+2026-06-15 21:15:56 | INFO     | app.main:_run_workflow_in_thread:689 | 工作流返回 | status=terminated | note_len=0 | elapsed=0.05s
+2026-06-15 21:15:56 | INFO     | app.main:_sse_event_generator:761 | ===== [接口] POST /api/generate_note (SSE) 完成 =====

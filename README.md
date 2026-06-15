@@ -18,7 +18,7 @@
 
 | ✅ 正常功能演示 | ⚠️ 识别检测演示 |
 |:---:|:---:|
-| <video src="test-true.mp4" controls width="100%"></video> | <video src="test-fail.mp4" controls width="100%"></video> |
+| ![正常功能演示](test-true.gif) | ![识别检测演示](test-fail.gif) |
 | 上传文档 → 生成笔记 → 下载 | 输入校验 / 相关性检测 / 防幻觉拦截 |
 
 ## 📁 目录结构
